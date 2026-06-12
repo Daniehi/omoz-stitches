@@ -1,1 +1,1 @@
-console.log("Omo'z Stitches website loaded");
+console.log("Omo'z Stitches website loaded successfully");
