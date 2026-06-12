@@ -1,62 +1,113 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f0f0f;
-  color: white;
+margin:0;
+font-family:'Segoe UI', sans-serif;
+background:#f4f6f9;
+color:#111;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  background: #111;
-  align-items: center;
+/* NAVBAR */
+.navbar {
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+background:#0f172a;
+color:white;
+position:sticky;
+top:0;
 }
 
-nav a {
-  color: white;
-  margin-left: 10px;
-  text-decoration: none;
+.navbar nav a {
+color:white;
+margin:0 10px;
+text-decoration:none;
+font-weight:500;
 }
 
+.logo {
+font-weight:bold;
+font-size:18px;
+}
+
+.cta {
+background:#ff4d6d;
+padding:8px 14px;
+border-radius:6px;
+color:white;
+text-decoration:none;
+}
+
+/* HERO */
 .hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(45deg, #111, #333);
+height:75vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#ff4d6d,#ffb703);
+color:white;
+padding:20px;
+}
+
+.hero h1 {
+font-size:44px;
+margin-bottom:10px;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 20px;
-  background: gold;
-  color: black;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
+display:inline-block;
+margin-top:15px;
+padding:12px 18px;
+background:#0f172a;
+color:white;
+text-decoration:none;
+border-radius:8px;
 }
 
-.preview, .products, .contact {
-  padding: 40px;
-  text-align: center;
+/* SECTIONS */
+.section {
+padding:50px 20px;
+text-align:center;
 }
 
 .grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
 }
 
-.card {
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
-  width: 150px;
+/* CARDS */
+.card, .product-card {
+background:white;
+padding:20px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
 }
 
+.card:hover, .product-card:hover {
+transform:translateY(-6px);
+}
+
+/* ICON */
+.icon {
+font-size:40px;
+margin-bottom:10px;
+}
+
+/* CONTACT */
+.center {
+text-align:center;
+padding:70px 20px;
+}
+
+/* FOOTER */
 footer {
-  text-align: center;
-  padding: 20px;
-  background: black;
-                              }
+text-align:center;
+padding:20px;
+background:#0f172a;
+color:white;
+margin-top:40px;
+  }
